@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDD6629A182BC3F2003E2140 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD66299182BC3F2003E2140 /* Foundation.framework */; };
+		DDD6629C182BC3F2003E2140 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD6629B182BC3F2003E2140 /* CoreGraphics.framework */; };
+		DDD6629E182BC3F2003E2140 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD6629D182BC3F2003E2140 /* UIKit.framework */; };
+		DDD662A0182BC3F2003E2140 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD6629F182BC3F2003E2140 /* SpriteKit.framework */; };
+		DDD662A6182BC3F2003E2140 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDD662A4182BC3F2003E2140 /* InfoPlist.strings */; };
+		DDD662A8182BC3F2003E2140 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD662A7182BC3F2003E2140 /* main.m */; };
+		DDD662AC182BC3F2003E2140 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD662AB182BC3F2003E2140 /* AppDelegate.m */; };
+		DDD662AF182BC3F2003E2140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD662AD182BC3F2003E2140 /* Main.storyboard */; };
+		DDD662B2182BC3F2003E2140 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD662B1182BC3F2003E2140 /* ViewController.m */; };
+		DDD662B5182BC3F2003E2140 /* StartScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD662B4182BC3F2003E2140 /* StartScene.m */; };
+		DDD662B9182BC3F2003E2140 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD662B8182BC3F2003E2140 /* Images.xcassets */; };
+		DDD662C0182BC3F2003E2140 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD662BF182BC3F2003E2140 /* XCTest.framework */; };
+		DDD662C1182BC3F2003E2140 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD66299182BC3F2003E2140 /* Foundation.framework */; };
+		DDD662C2182BC3F2003E2140 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD6629D182BC3F2003E2140 /* UIKit.framework */; };
+		DDD662CA182BC3F2003E2140 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDD662C8182BC3F2003E2140 /* InfoPlist.strings */; };
+		DDD662CC182BC3F2003E2140 /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD662CB182BC3F2003E2140 /* ______Tests.m */; };
+		DDD662D7182BC5CB003E2140 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD662D6182BC5CB003E2140 /* GameScene.m */; };
+		DDD662DC182BC75A003E2140 /* hitfly.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD662DA182BC75A003E2140 /* hitfly.png */; };
+		DDD662DD182BC75A003E2140 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD662DB182BC75A003E2140 /* Spaceship.png */; };
+		DDD662E4182BCEC2003E2140 /* EnemyFly.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD662E3182BCEC2003E2140 /* EnemyFly.m */; };
+		DDD662E6182C9000003E2140 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD662E5182C9000003E2140 /* AVFoundation.framework */; };
+		DDD662EA182C941B003E2140 /* She-is-My-Sin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDD662E9182C941B003E2140 /* She-is-My-Sin.mp3 */; };
+		DDD662EC182C9688003E2140 /* sj.WAV in Resources */ = {isa = PBXBuildFile; fileRef = DDD662EB182C9688003E2140 /* sj.WAV */; };
+		DDD662F2182CA153003E2140 /* BOMB3.WAV in Resources */ = {isa = PBXBuildFile; fileRef = DDD662F1182CA153003E2140 /* BOMB3.WAV */; };
+		DDD662F4182CB72F003E2140 /* enemy.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD662F3182CB72F003E2140 /* enemy.png */; };
+		DDD662F8182CBEBE003E2140 /* git.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD662F7182CBEBE003E2140 /* git.png */; };
+		DDD662FA182CC041003E2140 /* enemy_2.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD662F9182CC041003E2140 /* enemy_2.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDD662C3182BC3F2003E2140 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDD6628E182BC3F1003E2140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDD66295182BC3F2003E2140;
+			remoteInfo = "飞飞大战峰峰";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DDD66296182BC3F2003E2140 /* 飞飞大战峰峰.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "飞飞大战峰峰.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD66299182BC3F2003E2140 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DDD6629B182BC3F2003E2140 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DDD6629D182BC3F2003E2140 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DDD6629F182BC3F2003E2140 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		DDD662A3182BC3F2003E2140 /* 飞飞大战峰峰-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "飞飞大战峰峰-Info.plist"; sourceTree = "<group>"; };
+		DDD662A5182BC3F2003E2140 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DDD662A7182BC3F2003E2140 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDD662A9182BC3F2003E2140 /* 飞飞大战峰峰-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "飞飞大战峰峰-Prefix.pch"; sourceTree = "<group>"; };
+		DDD662AA182BC3F2003E2140 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DDD662AB182BC3F2003E2140 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DDD662AE182BC3F2003E2140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDD662B0182BC3F2003E2140 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DDD662B1182BC3F2003E2140 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DDD662B3182BC3F2003E2140 /* StartScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartScene.h; sourceTree = "<group>"; };
+		DDD662B4182BC3F2003E2140 /* StartScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartScene.m; sourceTree = "<group>"; };
+		DDD662B8182BC3F2003E2140 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DDD662BE182BC3F2003E2140 /* 飞飞大战峰峰Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "飞飞大战峰峰Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD662BF182BC3F2003E2140 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DDD662C7182BC3F2003E2140 /* 飞飞大战峰峰Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "飞飞大战峰峰Tests-Info.plist"; sourceTree = "<group>"; };
+		DDD662C9182BC3F2003E2140 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DDD662CB182BC3F2003E2140 /* ______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______Tests.m"; sourceTree = "<group>"; };
+		DDD662D5182BC5CB003E2140 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		DDD662D6182BC5CB003E2140 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		DDD662DA182BC75A003E2140 /* hitfly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hitfly.png; sourceTree = "<group>"; };
+		DDD662DB182BC75A003E2140 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		DDD662E2182BCEC2003E2140 /* EnemyFly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyFly.h; sourceTree = "<group>"; };
+		DDD662E3182BCEC2003E2140 /* EnemyFly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnemyFly.m; sourceTree = "<group>"; };
+		DDD662E5182C9000003E2140 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DDD662E9182C941B003E2140 /* She-is-My-Sin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "She-is-My-Sin.mp3"; sourceTree = "<group>"; };
+		DDD662EB182C9688003E2140 /* sj.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sj.WAV; sourceTree = "<group>"; };
+		DDD662F1182CA153003E2140 /* BOMB3.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BOMB3.WAV; sourceTree = "<group>"; };
+		DDD662F3182CB72F003E2140 /* enemy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemy.png; sourceTree = "<group>"; };
+		DDD662F7182CBEBE003E2140 /* git.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = git.png; sourceTree = "<group>"; };
+		DDD662F9182CC041003E2140 /* enemy_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemy_2.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDD66293182BC3F2003E2140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD662E6182C9000003E2140 /* AVFoundation.framework in Frameworks */,
+				DDD6629C182BC3F2003E2140 /* CoreGraphics.framework in Frameworks */,
+				DDD6629E182BC3F2003E2140 /* UIKit.framework in Frameworks */,
+				DDD662A0182BC3F2003E2140 /* SpriteKit.framework in Frameworks */,
+				DDD6629A182BC3F2003E2140 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD662BB182BC3F2003E2140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD662C0182BC3F2003E2140 /* XCTest.framework in Frameworks */,
+				DDD662C2182BC3F2003E2140 /* UIKit.framework in Frameworks */,
+				DDD662C1182BC3F2003E2140 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDD6628D182BC3F1003E2140 = {
+			isa = PBXGroup;
+			children = (
+				DDD662A1182BC3F2003E2140 /* 飞飞大战峰峰 */,
+				DDD662C5182BC3F2003E2140 /* 飞飞大战峰峰Tests */,
+				DDD66298182BC3F2003E2140 /* Frameworks */,
+				DDD66297182BC3F2003E2140 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDD66297182BC3F2003E2140 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDD66296182BC3F2003E2140 /* 飞飞大战峰峰.app */,
+				DDD662BE182BC3F2003E2140 /* 飞飞大战峰峰Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDD66298182BC3F2003E2140 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDD662E5182C9000003E2140 /* AVFoundation.framework */,
+				DDD66299182BC3F2003E2140 /* Foundation.framework */,
+				DDD6629B182BC3F2003E2140 /* CoreGraphics.framework */,
+				DDD6629D182BC3F2003E2140 /* UIKit.framework */,
+				DDD6629F182BC3F2003E2140 /* SpriteKit.framework */,
+				DDD662BF182BC3F2003E2140 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDD662A1182BC3F2003E2140 /* 飞飞大战峰峰 */ = {
+			isa = PBXGroup;
+			children = (
+				DDD662AA182BC3F2003E2140 /* AppDelegate.h */,
+				DDD662AB182BC3F2003E2140 /* AppDelegate.m */,
+				DDD662EB182C9688003E2140 /* sj.WAV */,
+				DDD662AD182BC3F2003E2140 /* Main.storyboard */,
+				DDD662F3182CB72F003E2140 /* enemy.png */,
+				DDD662B0182BC3F2003E2140 /* ViewController.h */,
+				DDD662B1182BC3F2003E2140 /* ViewController.m */,
+				DDD662B3182BC3F2003E2140 /* StartScene.h */,
+				DDD662B4182BC3F2003E2140 /* StartScene.m */,
+				DDD662D5182BC5CB003E2140 /* GameScene.h */,
+				DDD662F9182CC041003E2140 /* enemy_2.png */,
+				DDD662F1182CA153003E2140 /* BOMB3.WAV */,
+				DDD662F7182CBEBE003E2140 /* git.png */,
+				DDD662D6182BC5CB003E2140 /* GameScene.m */,
+				DDD662E2182BCEC2003E2140 /* EnemyFly.h */,
+				DDD662E9182C941B003E2140 /* She-is-My-Sin.mp3 */,
+				DDD662E3182BCEC2003E2140 /* EnemyFly.m */,
+				DDD662B8182BC3F2003E2140 /* Images.xcassets */,
+				DDD662DA182BC75A003E2140 /* hitfly.png */,
+				DDD662DB182BC75A003E2140 /* Spaceship.png */,
+				DDD662A2182BC3F2003E2140 /* Supporting Files */,
+			);
+			path = "飞飞大战峰峰";
+			sourceTree = "<group>";
+		};
+		DDD662A2182BC3F2003E2140 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDD662A3182BC3F2003E2140 /* 飞飞大战峰峰-Info.plist */,
+				DDD662A4182BC3F2003E2140 /* InfoPlist.strings */,
+				DDD662A7182BC3F2003E2140 /* main.m */,
+				DDD662A9182BC3F2003E2140 /* 飞飞大战峰峰-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDD662C5182BC3F2003E2140 /* 飞飞大战峰峰Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DDD662CB182BC3F2003E2140 /* ______Tests.m */,
+				DDD662C6182BC3F2003E2140 /* Supporting Files */,
+			);
+			path = "飞飞大战峰峰Tests";
+			sourceTree = "<group>";
+		};
+		DDD662C6182BC3F2003E2140 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDD662C7182BC3F2003E2140 /* 飞飞大战峰峰Tests-Info.plist */,
+				DDD662C8182BC3F2003E2140 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDD66295182BC3F2003E2140 /* 飞飞大战峰峰 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDD662CF182BC3F2003E2140 /* Build configuration list for PBXNativeTarget "飞飞大战峰峰" */;
+			buildPhases = (
+				DDD66292182BC3F2003E2140 /* Sources */,
+				DDD66293182BC3F2003E2140 /* Frameworks */,
+				DDD66294182BC3F2003E2140 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "飞飞大战峰峰";
+			productName = "飞飞大战峰峰";
+			productReference = DDD66296182BC3F2003E2140 /* 飞飞大战峰峰.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDD662BD182BC3F2003E2140 /* 飞飞大战峰峰Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDD662D2182BC3F2003E2140 /* Build configuration list for PBXNativeTarget "飞飞大战峰峰Tests" */;
+			buildPhases = (
+				DDD662BA182BC3F2003E2140 /* Sources */,
+				DDD662BB182BC3F2003E2140 /* Frameworks */,
+				DDD662BC182BC3F2003E2140 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDD662C4182BC3F2003E2140 /* PBXTargetDependency */,
+			);
+			name = "飞飞大战峰峰Tests";
+			productName = "飞飞大战峰峰Tests";
+			productReference = DDD662BE182BC3F2003E2140 /* 飞飞大战峰峰Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDD6628E182BC3F1003E2140 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = meng;
+				TargetAttributes = {
+					DDD662BD182BC3F2003E2140 = {
+						TestTargetID = DDD66295182BC3F2003E2140;
+					};
+				};
+			};
+			buildConfigurationList = DDD66291182BC3F1003E2140 /* Build configuration list for PBXProject "飞飞大战峰峰" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDD6628D182BC3F1003E2140;
+			productRefGroup = DDD66297182BC3F2003E2140 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDD66295182BC3F2003E2140 /* 飞飞大战峰峰 */,
+				DDD662BD182BC3F2003E2140 /* 飞飞大战峰峰Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDD66294182BC3F2003E2140 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD662FA182CC041003E2140 /* enemy_2.png in Resources */,
+				DDD662F2182CA153003E2140 /* BOMB3.WAV in Resources */,
+				DDD662DD182BC75A003E2140 /* Spaceship.png in Resources */,
+				DDD662A6182BC3F2003E2140 /* InfoPlist.strings in Resources */,
+				DDD662EA182C941B003E2140 /* She-is-My-Sin.mp3 in Resources */,
+				DDD662DC182BC75A003E2140 /* hitfly.png in Resources */,
+				DDD662F8182CBEBE003E2140 /* git.png in Resources */,
+				DDD662F4182CB72F003E2140 /* enemy.png in Resources */,
+				DDD662B9182BC3F2003E2140 /* Images.xcassets in Resources */,
+				DDD662EC182C9688003E2140 /* sj.WAV in Resources */,
+				DDD662AF182BC3F2003E2140 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD662BC182BC3F2003E2140 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD662CA182BC3F2003E2140 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDD66292182BC3F2003E2140 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD662B5182BC3F2003E2140 /* StartScene.m in Sources */,
+				DDD662B2182BC3F2003E2140 /* ViewController.m in Sources */,
+				DDD662E4182BCEC2003E2140 /* EnemyFly.m in Sources */,
+				DDD662D7182BC5CB003E2140 /* GameScene.m in Sources */,
+				DDD662AC182BC3F2003E2140 /* AppDelegate.m in Sources */,
+				DDD662A8182BC3F2003E2140 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD662BA182BC3F2003E2140 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD662CC182BC3F2003E2140 /* ______Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDD662C4182BC3F2003E2140 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDD66295182BC3F2003E2140 /* 飞飞大战峰峰 */;
+			targetProxy = DDD662C3182BC3F2003E2140 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDD662A4182BC3F2003E2140 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDD662A5182BC3F2003E2140 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DDD662AD182BC3F2003E2140 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDD662AE182BC3F2003E2140 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDD662C8182BC3F2003E2140 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDD662C9182BC3F2003E2140 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDD662CD182BC3F2003E2140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DDD662CE182BC3F2003E2140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDD662D0182BC3F2003E2140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "飞飞大战峰峰/飞飞大战峰峰-Prefix.pch";
+				INFOPLIST_FILE = "飞飞大战峰峰/飞飞大战峰峰-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DDD662D1182BC3F2003E2140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "飞飞大战峰峰/飞飞大战峰峰-Prefix.pch";
+				INFOPLIST_FILE = "飞飞大战峰峰/飞飞大战峰峰-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DDD662D3182BC3F2003E2140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/飞飞大战峰峰.app/飞飞大战峰峰";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "飞飞大战峰峰/飞飞大战峰峰-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "飞飞大战峰峰Tests/飞飞大战峰峰Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DDD662D4182BC3F2003E2140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/飞飞大战峰峰.app/飞飞大战峰峰";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "飞飞大战峰峰/飞飞大战峰峰-Prefix.pch";
+				INFOPLIST_FILE = "飞飞大战峰峰Tests/飞飞大战峰峰Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDD66291182BC3F1003E2140 /* Build configuration list for PBXProject "飞飞大战峰峰" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD662CD182BC3F2003E2140 /* Debug */,
+				DDD662CE182BC3F2003E2140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDD662CF182BC3F2003E2140 /* Build configuration list for PBXNativeTarget "飞飞大战峰峰" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD662D0182BC3F2003E2140 /* Debug */,
+				DDD662D1182BC3F2003E2140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDD662D2182BC3F2003E2140 /* Build configuration list for PBXNativeTarget "飞飞大战峰峰Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD662D3182BC3F2003E2140 /* Debug */,
+				DDD662D4182BC3F2003E2140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDD6628E182BC3F1003E2140 /* Project object */;
+}
