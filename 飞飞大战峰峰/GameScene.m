@@ -4,8 +4,6 @@
 //
 //  Created by meng on 13-11-7.
 //  Copyright (c) 2013年 meng. All rights reserved.
-//test 78 io
-//io90
 
 #import "GameScene.h"
 #import "EnemyFly.h"
