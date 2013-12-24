@@ -19,6 +19,8 @@
     SKView * skView = (SKView *)self.view;
     skView.showsFPS = NO;
     skView.showsNodeCount = NO;
+    StartScene *scene=[StartScene sceneWithSize:skView.bounds.size];
+    [skView presentScene:scene];
     
     
 }
